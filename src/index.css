@@ -15,27 +15,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.card {
-  height: 100%;
-  border-radius: 1vmax;
-  transition: transform 800ms ease;
-}
-
-.card:hover {
-  transform: scale(1.08);
-}
-
-.card:hover > img {
-  opacity: 1;
-  transform: scale(1.01);
-}
-
-.card > img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: inherit;
-  opacity: 100;
-  transition: opacity 800ms ease,
-    transform 800ms ease;
-}

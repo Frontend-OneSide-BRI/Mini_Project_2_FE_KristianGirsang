@@ -3,7 +3,7 @@ import LoginModal from "./LoginModal";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 p-4 sticky top-0">
+    <nav className="bg-gray-800 p-4 sticky top-0 z-10">
       <div className="sticky flex max-w-screen items-center justify-between">
         <div className="flex items-center">
           <span className="text-white font-bold text-lg">
@@ -15,18 +15,18 @@ const Navbar = () => {
         </div>
         <div className="flex items-center space-x-4">
           <a
-            href="/home"
-            className="text-white hover:text-gray-300 px-3 py-2 rounded-md"
+            href="../pages/Home.js"
+            className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-bold"
           >
             Home
           </a>
           <a
             href="/gallery"
-            className="text-white hover:text-gray-300 px-3 py-2 rounded-md"
+            className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-bold"
           >
             Gallery
           </a>
-          <button className="bg-white text-gray-800 hover:bg-gray-200 px-4 py-2 rounded-md">
+          <button className="bg-white text-gray-800 hover:bg-gray-200 px-4 py-2 rounded-md text-xl font-bold">
             <LoginModal />
           </button>
         </div>
