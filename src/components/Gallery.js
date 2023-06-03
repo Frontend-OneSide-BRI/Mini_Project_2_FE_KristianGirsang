@@ -22,22 +22,22 @@ const Gallery = () => {
         <div className="flex gap-2 mb-4">
           <FilterButton
             category="All"
-            selectedCategory={{ selectedCategory }}
+            selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
           />
           <FilterButton
             category="Architecture"
-            selectedCategory={{ selectedCategory }}
+            selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
           />
           <FilterButton
             category="Nature"
-            selectedCategory={{ selectedCategory }}
+            selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
           />
           <FilterButton
             category="People"
-            selectedCategory={{ selectedCategory }}
+            selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
           />
         </div>

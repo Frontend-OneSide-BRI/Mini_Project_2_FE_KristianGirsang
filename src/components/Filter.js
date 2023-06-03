@@ -5,13 +5,11 @@ const FilterButton = ({ category, selectedCategory, setSelectedCategory }) => {
     setSelectedCategory(category === "All" ? null : category);
   };
 
-  const isActive = selectedCategory === category;
+  const isActive = selectedCategory === null || selectedCategory === category;
 
   return (
     <button
-      className={`bg-gray-400 border-solid border-2 border-black hover:bg-gray-800 py-2 px-4 rounded-lg ${
-        isActive ? "bg-gray-800 text-white" : ""
-      }`}
+      className="font-bold text-xl text-gray-800  hover:bg-gray-800 border-2 border-solid border-gray-800 hover:text-white py-4 px-8 rounded-lg"
       onClick={handleClick}
     >
       {category}
