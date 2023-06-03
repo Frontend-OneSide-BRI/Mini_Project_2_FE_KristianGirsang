@@ -4,12 +4,6 @@ import { useState } from "react";
 const ImageDetailsModal = ({ selectedImage, closePopup }) => {
   const [expanded, setExpanded] = useState(false);
 
-  const handleOverlayClick = (event) => {
-    if (event.target === event.currentTarget) {
-      closePopup();
-    }
-  };
-
   const handleToggleExpanded = () => {
     setExpanded(!expanded);
   };
