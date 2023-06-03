@@ -6,8 +6,6 @@ const Home = () => {
   return (
     <div>
       <Slider />
-      <Category />
-      <Category />
     </div>
   );
 };
