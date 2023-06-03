@@ -1,14 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Gallery from "../components/Gallery";
 import Navbar from "../components/Navbar";
-import FilterButton from "../components/Filter";
 
 const GalleryPage = () => {
+  useEffect(() => {
+    document.title = "imagi-W | Gallery";
+  }, []);
   return (
     <div>
       <Navbar />
-      {/* <FilterButton /> */}
-      {/* Search functionality */}
       <Gallery />
     </div>
   );

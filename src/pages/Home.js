@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Slider from "../components/Slider";
-import Category from "../components/Category";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "imagi-W | HomePage";
+  }, []);
   return (
     <div>
+      {/* <Navbar /> */}
       <Slider />
     </div>
   );
