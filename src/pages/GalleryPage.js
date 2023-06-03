@@ -8,7 +8,6 @@ const GalleryPage = () => {
   }, []);
   return (
     <div>
-      <Navbar />
       <Gallery />
     </div>
   );

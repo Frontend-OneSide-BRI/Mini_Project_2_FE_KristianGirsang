@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import LoginModal from "./LoginModal";
 
 const Navbar = () => {
@@ -14,18 +15,18 @@ const Navbar = () => {
           </span>
         </div>
         <div className="flex items-center space-x-4">
-          <a
-            href="../pages/Home.js"
+          <Link
+            to="/"
             className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-bold"
           >
             Home
-          </a>
-          <a
-            href="/gallery"
+          </Link>
+          <Link
+            to="/gallery"
             className="text-white hover:text-gray-300 px-3 py-2 rounded-md text-xl font-bold"
           >
             Gallery
-          </a>
+          </Link>
           <button className="bg-white text-gray-800 hover:bg-gray-200 px-4 py-2 rounded-md text-xl font-bold">
             <LoginModal />
           </button>
