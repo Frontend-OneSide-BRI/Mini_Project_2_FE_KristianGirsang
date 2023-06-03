@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import data from "../data/db.json";
 import ImageDetailsModal from "./ImageDetailsModal";
+import ViewMore from "./ViewMore";
 
 const HomeContent = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleImageClick = (imageUrl) => {
     setSelectedImage(imageUrl);
@@ -12,7 +12,6 @@ const HomeContent = () => {
 
   const closePopup = () => {
     setSelectedImage(null);
-    setSelectedCategory(null);
   };
 
   return (
@@ -47,6 +46,7 @@ const HomeContent = () => {
             </div>
           ))}
         </div>
+          <ViewMore />
       </div>
 
       {selectedImage && (
