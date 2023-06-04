@@ -43,7 +43,7 @@ const Gallery = () => {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-3/4 place-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-5/6">
           {/* Render images based on the selected category */}
           {data.images
             .filter((item) =>
